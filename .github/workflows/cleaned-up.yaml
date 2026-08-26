@@ -1,4 +1,4 @@
-name: bbs2gh-migration
+name: clean-bbs2gh-migration
 
 on:
   workflow_dispatch:
