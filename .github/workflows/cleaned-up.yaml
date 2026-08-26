@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: "GitHub Environment holding secrets & variables for pre-check, validation and monitoring. No required reviewers."
+        description: "GitHub Environment holding secrets"
         required: true
         default: 'bbs-migration'
         type: string
