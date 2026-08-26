@@ -445,7 +445,9 @@ migrate_repository() {
       --ssh-user "${SSH_USER}" \
       --ssh-private-key "${resolvedKey}" \
       --target-api-url "${TARGET_API_URL}" \
-      --target-repo-visibility "${gh_repo_visibility}"
+      --target-repo-visibility "${gh_repo_visibility}" \
+      --use-github-storage \
+      --target-uploads-url "https://uploads.cmf-factory.ghe.com"
 
     # Assess log content
     if grep -q "No operation will be performed" "${log_file}"; then
